@@ -1,0 +1,69 @@
+
+
+CSS 
+/*  Clases generales */
+body {
+    
+}
+
+article {
+
+}
+
+
+
+#titulo_del_blog {
+   
+}
+
+/* Terminan clases generales  */
+
+/* barra de navegación */
+
+.resaltado {
+
+}
+
+nav>ul>li {
+
+}
+
+nav>ul>li>a {
+
+}
+
+/* fin barra de navegación */
+
+/* footer del blog */
+#footer_blog {
+
+}
+
+/* fin del footer del blog */
+
+/* ilustraciones */
+
+.ilustracion {
+
+}
+
+.ilustracion figcaption {.ilustracion figcaption {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-style: italic;
+ 
+}
+
+/* fin ilustraciones */
+
+*{box-sizing: border-box;}
+body{background-color: rgb(8, 8, 8);color:white}
+article{background-color: rgb(0, 255, 242);padding: 1.5rem;border-bottom: 1px solid rgb(207, 66, 0);}
+#Ajedrez{text-align: center; font-size: 3rem;}
+#Soccer{text-align: center; font-size: 3rem;}
+.resaltado{color: rgba(94, 255, 0, 0.534);}
+nav>ul>li{list-style: none;}
+nav>ul>li>a{text-decoration: none;}
+#footer_blog{margin: 2rem;}
+.ilustracion{display: inline-block; border: 4px solid rgb(135, 0, 245);}
+.ilustracion figcaption{margin-top: 1rem; margin-left: 1rem; font-style: italic;}
