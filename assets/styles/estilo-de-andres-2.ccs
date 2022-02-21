@@ -1,12 +1,11 @@
 body {
-    background-color: blue;
-}*{box-sizing: border-box;}
-body{background-color: rgb(18, 156, 36);color:rgb(0, 0, 0);}
-article{background-color: rgb(255, 255, 255);padding: 1.5rem;border-bottom: 1px solid rgb(0, 0, 0);}
+*{box-sizing: border-box;}
+body{background-color: rgb(248, 7, 7);color:white;}
+article{background-color: rgb(0, 0, 0);padding: 1.5rem;border-bottom: 1px solid rgb(115, 255, 0);}
 #Ajedrez{text-align: center; font-size: 3rem;}
 #Soccer{text-align: center; font-size: 3rem;}
 #Marvel {text-align: center; font-size: 3rem;}
-.resaltado{color: rgba(137, 143, 134, 0.534);}
+.resaltado{color: rgba(94, 255, 0, 0.534);}
 nav>ul>li{list-style: none;}
 nav>ul>li>a{text-decoration: none;}
 #footer_blog{margin: 2rem;}
