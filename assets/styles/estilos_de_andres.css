@@ -1,9 +1,10 @@
 
 *{box-sizing: border-box;}
-body{background-color: rgb(255, 0, 0);color:white;}
-article{background-color: rgb(0, 0, 0);padding: 1.5rem;border-bottom: 1px solid rgb(207, 66, 0);}
+body{background-color: rgb(248, 7, 7);color:white;}
+article{background-color: rgb(0, 0, 0);padding: 1.5rem;border-bottom: 1px solid rgb(115, 255, 0);}
 #Ajedrez{text-align: center; font-size: 3rem;}
 #Soccer{text-align: center; font-size: 3rem;}
+#Marvel {text-align: center; font-size: 3rem;}
 .resaltado{color: rgba(94, 255, 0, 0.534);}
 nav>ul>li{list-style: none;}
 nav>ul>li>a{text-decoration: none;}
