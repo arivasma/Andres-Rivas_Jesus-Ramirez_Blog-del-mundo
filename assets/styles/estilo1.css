@@ -1,7 +1,7 @@
 body {
     background-color: blue;
 }*{box-sizing: border-box;}
-body{background-color: rgb(18, 156, 36);color:rgb(0, 0, 0);}
+body{background-color: rgba(32, 46, 34, 0.521);color:rgb(0, 0, 0);}
 article{background-color: rgb(255, 255, 255);padding: 1.5rem;border-bottom: 1px solid rgb(0, 0, 0);}
 #Ajedrez{text-align: center; font-size: 3rem;}
 #Soccer{text-align: center; font-size: 3rem;}
@@ -53,6 +53,3 @@ section>aside {
     /* esta sección se extenderá 4 columnas. */
     grid-column: span 4;
 }
-
-
-Termina grid */
