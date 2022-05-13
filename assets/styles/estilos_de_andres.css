@@ -7,24 +7,47 @@ article{background-color: rgb(0, 0, 0);padding: 1.5rem;border-bottom: 1px solid 
 .resaltado{color: rgba(94, 255, 0, 0.534);}
 nav>ul>li{list-style: none;}
 nav>ul>li>a{text-decoration: none;}
-
+ 
 #footer_blog{display: flex;margin: 2rem;align-items: center;justify-content: space-between;padding: 4rem 0 4rem 0;font-size: 1.3rem;}
 #footer_blog div:nth-child(2){font-size: 0.9rem;}
 .ilustracion{display: inline-block; border: 4px solid white;}
 .ilustracion figcaption{ margin-top: 1rem; margin-left: 1rem; font-style: italic}
-
-
+ 
+ 
  }
-
-
-
+ 
+ 
+ 
 .referencia{color:rgb(200, 255, 0);}
 .ilustracion{display: inline-block; border: 4px solid rgb(255, 255, 255);}
 .ilustracion figcaption{margin-top: 1rem; margin-left: 1rem; font-style: italic;}
-
+ 
+ 
+/* desde 0 hasta 1099px compórtate así: */
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 1rem;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1.5rem;
+}
+ 
+/* pantallas grandes de 1100px en adelante compórtate así: */
+@media (min-width: 1100px) {
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 1px solid red;
+    }
+}
+ 
+/* fin pantallas grandes */
+ 
 /* grid */
 section {
-    
+   
     /* despliégate como  grid */
     display: grid;
     /* Crea 12 columnas cada una de una fracción usando la función repeat*/
@@ -33,41 +56,172 @@ section {
     grid-auto-rows: auto;
     /* añade un espacio entre los elementos del grid de 3rem */
     gap: 3rem;
-
+ 
 }
-
+/* desde 0 hasta 1099px compórtate así: */
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 1rem;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1.5rem;
+}
+ 
+/* pantallas grandes de 1100px en adelante compórtate así: */
+@media (min-width: 1100px) {
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 1px solid red;
+    }
+}
+ 
+/* fin pantallas grandes */
+ 
+ 
 /* apunta sólo a los header que son hijos directos de section */
 section>header {
     /* esta sección se extenderá 12 columnas. */
-    grid-column: span 12;
-
-    
+    grid-column: span 12;  
 }
-
+/* desde 0 hasta 1099px compórtate así: */
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 1rem;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1.5rem;
+}
+ 
+/* pantallas grandes de 1100px en adelante compórtate así: */
+@media (min-width: 1100px) {
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 1px solid red;
+    }
+}
+ 
+/* fin pantallas grandes */
+ 
+ 
+ 
 /* apunta sólo a los main que son hijos directos de section */
 section>main {
     /* esta sección se extenderá  columnas. */
     grid-column: span 8;
 }
-
+/* desde 0 hasta 1099px compórtate así: */
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 1rem;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1.5rem;
+}
+ 
+/* pantallas grandes de 1100px en adelante compórtate así: */
+@media (min-width: 1100px) {
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 1px solid red;
+    }
+}
+ 
+/* fin pantallas grandes */
+ 
+ 
+ 
 /*
 /* apunta sólo a los footer que son hijos directos de section */
 section>footer {
-
+ 
     /* esta sección se extenderá 12 columnas. */
     grid-column: span 12;
-} 
-
+}
+/* desde 0 hasta 1099px compórtate así: */
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 1rem;
+    border-bottom: 1px solid rgb(0, 224, 231);
+    padding-bottom: 1.5rem;
+}
+ 
+/* pantallas grandes de 1100px en adelante compórtate así: */
+@media (min-width: 1100px) {
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 1px solid red;
+    }
+}
+ 
+/* fin pantallas grandes */
+ 
+}
+/* fin pantallas grandes */
 /* apunta sólo a los aside que son hijos directos de section */
 section>aside {
     /* esta sección se extenderá 4 columnas. */
     grid-column: span 4;
 }
+aside div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0.6rem;
+    border-bottom: 1px dashed #fff;
+}
+ 
+/* si la pantalla mide mínimo 1024.1 px y máximo 1324.1 entonces... */
+@media (min-width: 1024.1px) and (max-width: 1324.1px) {
+    aside div {
+        /* despliega los elementos de microblogging uno encima del otr */
+        flex-direction: column;
+    }
+}
+ 
+/* end media */
+ 
+ 
+ 
 
-
-
-
-
+    }
+    
+aside div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0.6rem;
+    border-bottom: 1px dashed #fff;
+}
+ 
+/* si la pantalla mide mínimo 1024.1 px y máximo 1324.1 entonces... */
+@media (min-width: 1024.1px) and (max-width: 1324.1px) {
+    aside div {
+        /* despliega los elementos de microblogging uno encima del otr */
+        flex-direction: column;
+    }
+}
+ 
+/* end media */
+ 
+ 
+ 
+ 
+ 
 microbloging{display: inline-block;border: 4px solid white; text-align: justify; line-height: 35px;}
 nav{font-size: 1.3rem;}
 nav>ul>li>a:hover{font-size: 1.8rem;text-decoration: underline; color: yellowgreen;}
@@ -104,7 +258,7 @@ aside>div{
     align-items: center;
     border-bottom: dashed;
     border-width: 0.05rem;
-    padding: 0.6rem; 
+    padding: 0.6rem;
 }
     aside div img {
         /* la imagen tendrá color de fondo blanco */
@@ -123,13 +277,13 @@ aside>div{
 }
 #footer_blog div:nth-child(2)
 font-size:0.9rem;
-
+ 
 footer{display: inline-block;border: 4px solid white; text-align: justify; line-height: 35px;}
 nav{font-size: 1.3rem;}
 nav>ul>li>a:hover{font-size: 1.8rem;text-decoration: underline; color: yellowgreen;}
 nav>ul>li>a{text-decoration: none; color: white;}
-
-
+ 
+ 
 nav>ul{
     display: flex;
     align-items: center;
@@ -138,6 +292,7 @@ nav>ul{
     padding-bottom: 0.5rem;
 }
 
+                                      
 
 
 
@@ -145,3 +300,60 @@ nav>ul{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 1024.1px){
+    section>footer {
+        flex-direction: column;
+        line-height: 3rem;
+    }
+}
+
+
+nav{
+    font-size: 1.3rem;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+}
+
+
+
+
+
+@media(min-width: 1100px){
+    nav>ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 1px solid red;
+    }
+}
+
+
+
+/* si la pantalla mide mínimo 1024.1 px y máximo 1324.1 entonces... */
+@media (min-width: 1024.1px) and (max-width: 1324.1px) {
+    aside div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+        padding: 0.6rem;
+        border-bottom: 1px dashed rgb(253, 253, 253);
+    
+        /* despliega los elementos de microblogging uno encima del otr */
+        flex-direction: column;
+    }
+}
+
+/* end media */
